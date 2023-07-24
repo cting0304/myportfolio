@@ -54,6 +54,7 @@ header{
 .menu-icon {
 	display: none;
 	cursor: pointer;
+	padding: 2rem;
 }
 
 .bx-menu {
