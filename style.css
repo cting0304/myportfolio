@@ -31,7 +31,7 @@ header{
 	position: fixed;
 	width: 100%;
 	top: 0;
-	right: 0;
+	left: 0;
 	z-index: 1000;
 	display: flex;
 	align-items: center;
@@ -39,8 +39,9 @@ header{
 	background: transparent;
 	padding: 22px 15%;
 	border-bottom: 1px solid transparent;
-	transition: all .45 ease;
+	
 }
+
 
 	
 .logo{
@@ -48,7 +49,17 @@ header{
 	font-size: 28px;
 	font-weight: 700;
 	letter-spacing: 1px;
-}	
+}
+
+.menu-icon {
+	display: none;
+	cursor: pointer;
+}
+
+.bx-menu {
+	color: black;
+	font-size: 2rem;
+}
 
 span{
 	color: var(--main-color);
@@ -56,6 +67,10 @@ span{
 
 .navlist{
 	display: flex;
+	list-style: none;
+	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .navlist a{
@@ -66,21 +81,20 @@ span{
 	transition: all .45s ease;
 }
 
+.navlist li {
+	margin-right: 20px;
+  }
+  
+.navlist li:last-child {
+	margin-right: 0;
+  }
+
 .navlist a:hover{
 	color: var(--main-color);
 }
 
 .navlist a.active{
 	color: var(--main-color);
-}
-
-#menu-icon{
-		font-size: 28px;
-		color: var(--text-color);
-		z-index: 10001;
-		cursor: pointer;
-		margin-left: 25px;
-		display: none;
 }
 
 section	{
@@ -404,7 +418,7 @@ header.sticky{
 		transition: .1s;
 	}
 	section{
-		padding: 110px 3% 60px;
+		padding: 110px 7% 60px;
 	}
 	.end{
 		padding: 15px 3%;
@@ -679,7 +693,7 @@ header.sticky{
 	.project-description {
 	  text-align: left;
 	  margin-top: 2rem;
-	  padding: 20px;
+	  padding: 2px;
 	}
   
 	.project-description h3 {
@@ -902,15 +916,15 @@ header.sticky{
 }
 
 
+/* Custom CSS for responsiveness */
 .project-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  max-width: 500px; /* Set the initial maximum width for larger devices */
-}
-
-
-@media (max-width: 1024px) {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	max-width: 500px; /* Set the initial maximum width for larger devices */
+  }
+  
+  @media (max-width: 1024px) {
 	.project-image img {
 	  max-width: 400px; /* Adjust this value as needed for medium-sized devices */
 	}
@@ -919,8 +933,38 @@ header.sticky{
   /* For small devices, further increase the image size */
   @media (max-width: 768px) {
 	.project-image img {
-	  max-width: 300px; /* Adjust this value as needed for small devices */
+	  max-width: 500px; /* Adjust this value as needed for small devices */
 	}
   }
   
+  /* For extra-small devices, increase the image size even more */
+  @media (max-width: 576px) {
+	.project-image img {
+	  max-width: 600px; /* Adjust this value as needed for extra-small devices */
+	}
+  }
   
+  @media screen and (max-width: 768px) {
+	.menu-icon {
+	  display: block;
+	}
+  
+	.navlist {
+	  display: none;
+	  flex-direction: column;
+	  position: absolute;
+	  top: 70px;
+	  left: 0;
+	  width: 100%;
+	  background-color: #dfe2e8;
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	}
+  
+	.navlist.show {
+	  display: flex;
+	}
+  
+	.navlist li {
+	  margin: 10px;
+	}
+  }
