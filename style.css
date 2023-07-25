@@ -8,6 +8,10 @@
 	scroll-behavior: smooth;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 :root{
 	--bg-color: #dfe2e8;
 	--second-bg-color: #202020;
@@ -36,7 +40,7 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: transparent;
+	background: var(--bg-color);
 	padding: 22px 15%;
 	border-bottom: 1px solid transparent;
 	
@@ -54,7 +58,7 @@ header{
 .menu-icon {
 	display: none;
 	cursor: pointer;
-	padding: 2rem;
+	
 }
 
 .bx-menu {
@@ -83,7 +87,7 @@ span{
 }
 
 .navlist li {
-	margin-right: 20px;
+	margin-right: 10px;
   }
   
 .navlist li:last-child {
@@ -390,11 +394,13 @@ header.sticky{
 	padding: 20px 15%;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: ecnter;
+	text-align: center;
 	justify-content: space-between;
 	gap: 2rem;
 	background: #c5c7c9;
+
 }
+
 
 .last-text p{
 	color: var(--second-color);
@@ -407,6 +413,7 @@ header.sticky{
 	font-size: 20px;
 	color: var(--text-color);
 	background: var(--main-color);
+	display: none;
 }
 
 @media (max-width: 990px){
@@ -542,9 +549,30 @@ header.sticky{
   margin-bottom: 1rem;
 }
 
+@media (max-width: 428px) {
+	#project {
+		margin-top: 50%;
+	}
+
+	#home {
+		margin-top: 30%;
+	}
+
+	#services {
+		margin-top: 10%;
+	}
+	
+	#about {
+		margin-top: 10%;
+	}
+}
 
 /* Custom CSS for responsiveness */
 @media (max-width: 768px) {
+
+	
+	
+	
 	header {
 	  padding: 12px 5%;
 	}
@@ -946,6 +974,8 @@ header.sticky{
   }
   
   @media screen and (max-width: 768px) {
+	
+	
 	.menu-icon {
 	  display: block;
 	}
@@ -963,9 +993,12 @@ header.sticky{
   
 	.navlist.show {
 	  display: flex;
+
 	}
   
 	.navlist li {
 	  margin: 10px;
 	}
   }
+
+  
