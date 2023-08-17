@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<!-- Custom CSS Link -->
-	<link rel="stylesheet" type="text/css" href="./style.css">
-
-	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">	
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My Portfolio</title>
+		<!-- Custom CSS Link -->
+		<link rel="stylesheet" type="text/css" href="./style.css">
 	
-
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 	
-</head>
-<body>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Josefin+Sans&family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="loader-container">
+			<div class="three-body" id="loader">
+				<div class="three-body__dot"></div>
+				<div class="three-body__dot"></div>
+				<div class="three-body__dot"></div>
+			</div>
+		</div>
 
 	<!-- Header -->
+	<div id="main-content" style="display: none;">
 	<header>
         <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">Chris<span>tian</span>.</a>
-
-        <!-- Hamburger Icon -->
-        <div class="menu-icon" id="menu-icon">
-            <i class='bx bx-menu'></i>
-        </div>
 
         <ul class="navlist">
             <li><a href="#home" class="active" data-aos="fade-down"
@@ -45,40 +45,50 @@
                 data-aos-delay="900"
                 data-aos-duration="1500">Contact Me</a></li>
         </ul>
+		<div>
+			<button id="darkmode-toggle" class="toggle-button" data-aos="fade-right"
+			data-aos-delay="1100"
+			data-aos-duration="1500">
+				<img id="icon" src="images/moon-stars-svgrepo-com.svg" alt="Toggle Icon" class="svg">
+			</button>
+		</div>
+		
+		
     </header>
 	
 	<!-- Home section-->
 	<section class="home" id="home">
-		<div class="home-text">
-			<div class="slide" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
-				<span class="one">Hello</span>
-				<span class="two">I'm</span>
-			</div>
-			<h1 data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">Lord Christian Ting</h1>
-			<h3 data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">Web<span> Developer.</span></h3>
-			<p data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">I'm passionate about a few different things -specifically, <br> photography, playing musical instruments, and traveling.</p>
-			<div class="btn">
-                    <a href="https://www.facebook.com/itsmeyitian/" target="_blank" class="search-btn"
-					data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
-                    <i class='bx bxl-facebook-circle' ></i>
-                    </a>
-                    <a href="https://www.instagram.com/itsmeyitian/" target="_blank" class="search-btn"
-					data-aos="fade-up" data-aos-delay="1600" data-aos-duration="1000">
-                    <i class='bx bxl-instagram'></i>
-                    </a>
-                    <a href="https://twitter.com/christianting__"  target="_blank" class="search-btn"
-					data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000">
-                    <i class='bx bxl-twitter'></i>
-                    </a>
-                    <a href="mailto:christian.ting0304@gmail.com" target="_blank" class="search-btn"
-					data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000">
-                    <i class='bx bxl-gmail'></i>
-                    </a>
+        <div class="bg">
+            <img src="images/bg5.png" alt="">
+        </div>
+        <div class="home-text">
+            <div class="slide" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
+                <span class="one">Hello</span>
+                <span class="two">I'm</span>
             </div>
-
-			
-		</div>
-	</section>
+            <h1 data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">Lord Christian Ting</h1>
+            <h3 data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">Web<span> Developer.</span></h3>
+            <p data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">I'm passionate about a few different things -specifically, <br> photography, playing musical instruments, and traveling.</p>
+            <div class="btn">
+                <a href="https://www.facebook.com/itsmeyitian/" target="_blank" class="search-btn"
+                    data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000">
+                    <i class='bx bxl-facebook-circle' ></i>
+                </a>
+                <a href="https://linkedin.com/in/lcting"  target="_blank" class="search-btn"
+                    data-aos="fade-up" data-aos-delay="1800" data-aos-duration="1000">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://github.com/cting0304" target="_blank" class="search-btn"
+                    data-aos="fade-up" data-aos-delay="1900" data-aos-duration="1000">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:christian.ting0304@gmail.com" target="_blank" class="search-btn"
+                    data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000">
+                    <i class='bx bxl-gmail'></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
 	
@@ -114,6 +124,8 @@
 	  
 	  
 	  
+	  
+	  
 
 
 	<!-- service section design -->
@@ -132,7 +144,7 @@
 			</div>
 			<h3>Web Design</h3>
 			<br/>
-			<p>Designed and created a static mobile friendly portfolio website hosted in GitLab.
+			<p>Front-end Capstone: Designed and developed a static responsive portfolio website using HTML5, CSS3, Bootstrap, and Git for version control, hosted on GitHub.
 			</p>
 
 			
@@ -144,91 +156,121 @@
 			</div>
 			<h3>Web Development</h3>
 			<br/>
-			<p>Developed an E-Commerce API using Node and Express.js and completed a Full-Stack Application using the MERN Stack
+			<p>Full-Stack Capstone: Developed a React-based web application with API integration and responsive design, utilizing modern JavaScript techniques and DOM manipulation.
 			</p>
 		  </div>
+		</div>
+
+		<div class="skills" data-aos="fade-down" data-aos-delay="1200">
+			<i class='bx bxl-html5'></i>
+			<i class='bx bxl-css3'></i>
+			<i class='bx bxl-bootstrap'></i>
+			<i class='bx bxl-javascript'></i>
+			<i class='bx bxl-nodejs'></i>
+			<i class='bx bxl-mongodb'></i>
+			<i class='bx bxl-react'></i>
 		</div>
 	  </section>
 
 	<!-- about section design -->
-	<section class="about" id="about" >
-		<div class="about-img" data-aos="fade-right"
-		data-aos-offset="300"
-		data-aos-delay="500"
-		data-aos-easing="ease-in-sine">
-			<img src="images/bg2.jpg">
-		</div>
-
-
-		<div class="about-text">
-			<h2 data-aos="fade-down"
-			data-aos-easing="linear"
-			data-aos-duration="1500">About <span>Me</span></h2>
-			<h4 data-aos="fade-down"
-			data-aos-easing="linear"
-			data-aos-duration="1600">Web Developer</h4>
-			<p data-aos="fade-down"
-			data-aos-easing="linear"
-			data-aos-duration="1700">Hey there! I'm Christian, a passionate web developer who loves creating immersive digital experiences. With a blend of creativity and technical expertise, I bring ideas to life through clean designs and seamless functionality.<br><br> I'm skilled in HTML, CSS, JavaScript, and frameworks like React. I thrive on solving challenges and believe in effective collaboration. When not coding, I seek design inspiration from nature and enjoy a good cup of coffee. Let's work together to create something amazing!</p>
+	<section class="about" id="about">
+		<h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">About <span>Me</span></h2>
+		<div class="about-content">
+			<div class="about-text">
+				<div class="about-info">
+					<h4 data-aos="fade-right" data-aos-delay="800">Web Developer</h4>
+					<p data-aos="fade-right" data-aos-delay="800">Hey there! I'm Christian, a passionate web developer based in Metro Manila, Philippines. I excel in both front-end and back-end technologies, crafting captivating interfaces using HTML, CSS, and Bootstrap. I bring these designs to life with JavaScript, and build efficient server-side applications using Node.js and Express.js.<br><br> From static portfolios to dynamic web apps with API integrations, I've tackled a range of projects. My experience in customer service and technical support ensures I prioritize user satisfaction in every endeavor.<br><br> Beyond coding, I'm an explorer and dedicated reader. I'm excited to collaborate on projects that bring innovative ideas to life and make a meaningful impact.<br><br> Looking forward to the journey ahead!</p>
+				</div>
+			</div>
+			<div class="education">
+				<h2 data-aos="fade-left" data-aos-delay="800">Education</h2>
+				<div class="education-item1" data-aos="fade-left" data-aos-delay="800">
+					<h4>Web Development</h4>
+					<p>Zuitt Web Developer Program</p>
+					<p>April 2023 - July 2023</p>
+				</div>
+				<div class="education-item" data-aos="fade-left" data-aos-delay="800">
+					<h4>Software Development</h4>
+					<p>AMA Computer Learning Center</p>
+					<p>June 2014 - April 2016</p>
+				</div>
+				<a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fhackerrank-resumes.s3.amazonaws.com%2F21764805%2FfcOEBbEBTUrt__8huiYb7g9IQyhyJ7bmJ6600vOci6Rgm8WHUwEj269VLikhCdPoug%2FResume.docx&wdOrigin=BROWSELINK" target="_blank" class="btn1 btn-primary" data-aos="fade-left" data-aos-delay="800">Download CV</a>
+			</div>
 		</div>
 	</section>
+	
 
+	<div class="container1" data-aos="fade-right" data-aos-delay="500">
+		<div class="box2">
+			<div class="gallery">
+				<div class="gallery-item" data-aos="fade-right" data-aos-delay="500">
+					<img src="/images/bg1.jpg" alt="Image 1">
+				</div>
+				<div class="gallery-item" data-aos="fade-right" data-aos-delay="700">
+					<img src="/images/bg3.jpg" alt="Image 2">
+				</div>
+				<div class="gallery-item" data-aos="fade-right" data-aos-delay="900">
+					<img src="/images/bg4.jpg" alt="Image 2">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
 
 
 	<!-- Contact section design -->
 	<section class="contact" id="contact">
 		<div class="contact-text">
-			<h2>Contact <span>Me!</span></h2>
-			<h4>If you have any project in your mind.</h4>
+			<h2 data-aos="fade-right" data-aos-delay="500">Contact <span>Me!</span></h2>
+			<h4 data-aos="fade-right" data-aos-delay="600">If you have any project in your mind.</h4>
 			<!-- <p>As a web developer, I specialize in crafting bold and innovative digital experiences for companies.</p> -->
 		
 
-		<div class="contact-icons">
-				<a href="https://www.facebook.com/itsmeyitian/" target="_blank" class="search-btn targe">
-                <i class='bx bxl-facebook-circle' ></i>
-                </a>
-                <a href="https://www.instagram.com/itsmeyitian/" target="_blank" class="search-btn">
-                <i class='bx bxl-instagram'></i>
-                </a>
-                <a href="https://twitter.com/christianting__"  target="_blank" class="search-btn">
-                <i class='bx bxl-twitter'></i>
-                </a>
-                <a href="mailto:christian.ting0304@gmail.com" target="_blank" class="search-btn">
-                <i class='bx bxl-gmail'></i>
-                </a>
-		</div>
+			<div class="contact-icons">
+					<a href="https://www.facebook.com/itsmeyitian/" target="_blank" class="search-btn targe">
+					<i class='bx bxl-facebook-circle' data-aos="fade-right" data-aos-delay="700"></i>
+					</a>
+					<a href="https://linkedin.com/in/lcting"  target="_blank" class="search-btn">
+					<i class='bx bxl-linkedin' data-aos="fade-right" data-aos-delay="800"></i>
+					</a>
+					<a href="https://github.com/cting0304" target="_blank" class="search-btn">
+					<i class='bx bxl-github' data-aos="fade-right" data-aos-delay="900"></i>
+					</a>
+					<a href="mailto:christian.ting0304@gmail.com" target="_blank" class="search-btn">
+					<i class='bx bxl-gmail' data-aos="fade-right" data-aos-delay="1000"></i>
+					</a>
+			</div>
 		</div>
 
 		<div class="contact-form">
-		<form action="">
-			<input type="name" placeholder="Your Name" required>
-			<input type="email" placeholder="Your Email Address" required>
-			<input type="" placeholder=" Your Mobile Number" required>
-			<textarea name="" id="" cols="35" rows="10" placeholder="How can I Help You" required></textarea>
-			<input type="submit" value="Send Message" class="submit" required>
-			
-		</form>
-	</div>
+			<form action="">
+				<input type="text" placeholder="Your Name" class="input-form" required data-aos="fade-left" data-aos-delay="500">
+				<input type="email" placeholder="Your Email Address" class="input-form" required data-aos="fade-left" data-aos-delay="600">
+				<input type="tel" placeholder="Your Mobile Number" class="input-form" required data-aos="fade-left" data-aos-delay="700">
+				<textarea name="" id="" cols="35" rows="10" placeholder="How can I help you?" class="input-form" required data-aos="fade-left" data-aos-delay="800"></textarea>
+				<input type="submit" value="Send Message" class="submit" required d data-aos="fade-left" data-aos-delay="500">
+			</form>
+		</div>
 	</section>
+
+	
 
 	<!-- End section design -->
 	<section class="end">
 		<div class="last-text">
-			<p>Copyright © 2023 by Christian Ting All Rights Reserved. </p>
+			<p>© Developed by Lord Christian Ting 2023</p>
 		</div>
-
 		<div class="top">
 			<a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
 		</div>
 	</section>
+</div>
 
 
 
 	<!-- Custom JS Link -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
 	<script type="text/javascript" src="./script.js"></script>
 </body>
 </html>	
